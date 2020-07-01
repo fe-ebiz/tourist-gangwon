@@ -1,6 +1,11 @@
 @@if (pageName === 'intro') {
     @@loop('../../template/_contents.html',"./_json_info/@@jsonName")
 }
+
+@@if (pageName === 'intro_01') {
+    @@loop('../../template/_contents_01.html',"./_json_info/@@jsonName")
+}
+
 @@if (pageName === 'about') {
     @@loop('../../template/about/_contents_about.html',"./_json_info/@@jsonName")
 }
@@ -21,6 +26,11 @@
 @@if (pageName === 'intro_m') {
     @@loop('../../template_m/_contents_m.html',"./_json_info/@@jsonName")
 }
+
+@@if (pageName === 'intro_m_01') {
+    @@loop('../../template_m/_contents_m_01.html',"./_json_info/@@jsonName")
+}
+
 @@if (pageName === 'about_m') {
     @@loop('../../template_m/about/_contents_about_m.html',"./_json_info/@@jsonName")
 }

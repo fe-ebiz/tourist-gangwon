@@ -24,7 +24,7 @@ const copy = require('gulp-copy');
 function bSync() {
     browserSync.init({
         // watch: true,
-        port: 3030,
+        port: 3031,
         startPath: './views/',
         server: {
             baseDir: './dist'
@@ -34,7 +34,7 @@ function bSync() {
 function bSyncM() {
     browserSync.init({
         // watch: true,
-        port: 3030,
+        port: 3031,
         startPath: './views_m/',
         server: {
             baseDir: './dist'
@@ -47,8 +47,9 @@ function bSyncM() {
 function bSyncCopy() {
     browserSync.init({
         // watch: true,
-        port: 3030,
-        startPath: './somuui-do.co.kr/views/',
+        port: 3031,
+        // startPath: './somuui-do.co.kr/views/',
+        startPath: './site_manager.html',
         server: {
             baseDir: './copy_dist'
         }

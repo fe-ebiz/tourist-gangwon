@@ -13,13 +13,14 @@
 
 </head>
 <body>
-    <!--헤더부분-->
+    <!--헤띔부분-->
     @@if (isPageMenu === "false"){
         @@include('./_header.html',{
             "siteName": "@@siteName",
             "imgPath" : "@@imgPath",
             "isPageMenu": "@@isPageMenu",
-            "dotPath" : "."
+            "dotPath" : ".",
+            "localName": "@@localName"
         })
     }
     @@if (isPageMenu === "true"){
@@ -27,6 +28,7 @@
             "siteName": "@@siteName",
             "imgPath" : "@@imgPath",
             "isPageMenu": "@@isPageMenu",
-            "dotPath" : ".."
+            "dotPath" : "..",
+            "localName": "@@localName"
         })
     }
